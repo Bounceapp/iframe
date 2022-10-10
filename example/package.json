@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@bounceapp/iframe": "../src",
@@ -20,7 +21,6 @@
     "react-native-webview": "11.18.1"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1",
     "@expo/webpack-config": "~0.16.21",
     "babel-plugin-module-resolver": "4.1.0",
     "babel-preset-expo": "9.2.0",
