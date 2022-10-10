@@ -9,6 +9,9 @@
     "resolveJsonModule": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@bounceapp/iframe": ["./src/index"]
+    }
   }
 }
