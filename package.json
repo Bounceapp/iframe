@@ -1,0 +1,131 @@
+{
+  "name": "@bounceapp/iframe",
+  "private": false,
+  "license": "MIT",
+  "description": "Iframe wrapper for React Native",
+  "version": "0.0.4",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "react-native": "src/index",
+  "types": "lib/typescript/index.d.ts",
+  "source": "src/index",
+  "sideEffects": false,
+  "files": [
+    "src",
+    "lib",
+    "!lib/typescript/example",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  "keywords": [
+    "expo",
+    "iframe",
+    "react-native",
+    "iframe-react-native",
+    "ios",
+    "android",
+    "web"
+  ],
+  "repository": "https://github.com/Bounceapp/iframe",
+  "author": "Bounce (https://usebounce.com)",
+  "bugs": {
+    "url": "https://github.com/Bounceapp/iframe/issues"
+  },
+  "homepage": "https://github.com/Bounceapp/iframe#readme",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "typecheck": "tsc",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
+    "lint-staged": "lint-staged --allow-empty",
+    "prepare": "bob build && husky install",
+    "release": "release-it",
+    "build:docs": "build-storybook --output-dir docs",
+    "dev:docs": "start-storybook -p 6006",
+    "example": "yarn --cwd example",
+    "bootstrap": "yarn example && yarn"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --cache --fix",
+    "*.{ts,tsx,js,jsx,css,md,json}": "prettier --write"
+  },
+  "devDependencies": {
+    "@babel/core": "7.19.3",
+    "@commitlint/cli": "17.1.2",
+    "@commitlint/config-conventional": "17.1.0",
+    "@release-it/conventional-changelog": "5.1.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/manager-webpack4": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/jest": "28.1.8",
+    "@types/prettier": "2.7.1",
+    "@types/react": "17.0.50",
+    "@types/react-dom": "17.0.17",
+    "@types/react-native": "0.70.4",
+    "@typescript-eslint/eslint-plugin": "5.39.0",
+    "@typescript-eslint/parser": "5.39.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-universe": "11.1.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "27.1.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-native": "4.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "expo": "45.0.6",
+    "husky": "8.0.1",
+    "jest": "28.1.3",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-builder-bob": "0.18.3",
+    "react-native-web": "0.17.5",
+    "react-native-webview": "11.18.1",
+    "release-it": "15.5.0",
+    "typescript": "4.8.4"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*",
+    "react-native-web": "*",
+    "react-native-webview": "*"
+  },
+  "resolutions": {
+    "@types/react": "17.0.50",
+    "@types/react-native": "0.70.4",
+    "shell-quote": ">=1.7.3"
+  }
+}

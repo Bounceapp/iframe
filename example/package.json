@@ -1,0 +1,29 @@
+{
+  "name": "@bounceapp/iframe-example",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@bounceapp/iframe": "../src",
+    "expo": "45.0.6",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-web": "0.17.7",
+    "react-native-webview": "11.18.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "@expo/webpack-config": "~0.16.21",
+    "babel-plugin-module-resolver": "4.1.0",
+    "babel-preset-expo": "9.2.0",
+    "typescript": "4.8.4"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "root": true,
+  "extends": [
+    "universe/native",
+    "universe/node",
+    "universe/web",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["unused-imports", "react-native"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    // Forbid cyclical dependencies between modules
+    "import/no-cycle": "error",
+    // Automatically sort imports for consistency
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          ["parent", "sibling", "index"],
+          "object"
+        ],
+        "pathGroups": [
+          {
+            "group": "object",
+            "pattern": "*.@(jpg|png|svg)",
+            "patternOptions": { "matchBase": true }
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+    // Makes sure that we are not deploying console.log's to production
+    "no-console": "warn",
+    // Remove any unused imports
+    "unused-imports/no-unused-imports": "warn",
+    // Error if an element that likely requires a key
+    "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+    "react-native/no-unused-styles": 2,
+    // The one of the most common app crash issue are white spaces outside of Text elements
+    "no-irregular-whitespace": "error",
+    "no-nested-ternary": "warn",
+    // Ignore no-unused-vars on vars prepended with _
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "no-else-return": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.*(ts|tsx)"],
+      "rules": {
+        "@typescript-eslint/no-unnecessary-condition": "warn",
+        "@typescript-eslint/dot-notation": "error",
+        "@typescript-eslint/await-thenable": "error"
+      }
+    },
+    {
+      "files": ["**/*.*(spec|test).*(ts|tsx)"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "iframe-example",
+    "slug": "iframe-example",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "supportsTablet": true
+    },
+    "platforms": ["android", "ios", "web"]
+  }
+}
