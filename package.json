@@ -85,7 +85,7 @@
     "@types/prettier": "2.7.1",
     "@types/react": "17.0.50",
     "@types/react-dom": "17.0.17",
-    "@types/react-native": "0.70.6",
+    "@types/react-native": "0.70.7",
     "@typescript-eslint/eslint-plugin": "5.44.0",
     "@typescript-eslint/parser": "5.44.0",
     "eslint": "8.28.0",
@@ -123,7 +123,7 @@
   },
   "resolutions": {
     "@types/react": "17.0.50",
-    "@types/react-native": "0.70.6",
+    "@types/react-native": "0.70.7",
     "shell-quote": ">=1.7.3"
   }
 }
