@@ -70,7 +70,7 @@
     "*.{ts,tsx,js,jsx,css,md,json}": "npx prettier --write"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.0",
+    "@commitlint/cli": "17.4.1",
     "@commitlint/config-conventional": "17.4.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@storybook/addon-actions": "6.5.15",
@@ -86,8 +86,8 @@
     "@types/react": "~18.0.24",
     "@types/react-dom": "~18.0.8",
     "@types/react-native": "~0.70.6",
-    "@typescript-eslint/eslint-plugin": "5.48.0",
-    "@typescript-eslint/parser": "5.48.0",
+    "@typescript-eslint/eslint-plugin": "5.48.1",
+    "@typescript-eslint/parser": "5.48.1",
     "eslint": "8.31.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-config-universe": "11.1.1",
