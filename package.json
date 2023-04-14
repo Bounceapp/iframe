@@ -70,8 +70,8 @@
     "*.{ts,tsx,js,jsx,css,md,json}": "npx prettier --write"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.0",
-    "@commitlint/config-conventional": "17.6.0",
+    "@commitlint/cli": "17.6.1",
+    "@commitlint/config-conventional": "17.6.1",
     "@release-it/conventional-changelog": "5.1.1",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
