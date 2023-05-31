@@ -82,7 +82,7 @@
     "@storybook/react": "6.5.16",
     "@storybook/testing-library": "0.1.0",
     "@types/jest": "28.1.8",
-    "@types/prettier": "2.7.2",
+    "@types/prettier": "2.7.3",
     "@types/react": "~18.0.24",
     "@types/react-dom": "~18.0.8",
     "@types/react-native": "~0.72.0",
