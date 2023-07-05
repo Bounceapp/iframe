@@ -7514,10 +7514,10 @@ eslint-config-prettier@8.8.0, eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.8.0.tgz#bfda738d412adc917fd7b038857110efe98c9348"
   integrity sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==
 
-eslint-config-universe@11.2.0:
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-universe/-/eslint-config-universe-11.2.0.tgz#36b27112d6ef237e1bcafd8458cd90a25ca5053c"
-  integrity sha512-exyQ2DozdDjq+FmIFmo0l3LDVBIn9l8/hJn6EP/EYKGutj0Wr7MvDLp1nVLP07Wk9ykD0Hi2s8g+TP4SW5cOmQ==
+eslint-config-universe@11.3.0:
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-universe/-/eslint-config-universe-11.3.0.tgz#d6312bb96f9d4bb6c598ce3a46ce517b848efea0"
+  integrity sha512-CL6v7IxV+OJn0q1vqtFVtX+sNUdY7MiIy3/XD0dy96D7RsDvYBWWqs4S1AIB4AdVgraNnv829q1+asluAePSSw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.50.0"
     "@typescript-eslint/parser" "^5.50.0"
