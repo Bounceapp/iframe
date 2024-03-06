@@ -6,7 +6,7 @@ import { IframeProps } from "./types"
  * ```tsx
  * import React from "react"
  *
- * import { Iframe } from "@bounce/iframe"
+ * import { Iframe } from "@bounceapp/iframe"
  *
  * const App = () => (
  *   <Iframe uri="https://usebounce.com/careers" style={{ flex: 1 }} />
