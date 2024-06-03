@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react"
+import { Meta, StoryFn } from "@storybook/react"
 import React from "react"
 
 import { Iframe } from "./Iframe"
@@ -10,9 +10,9 @@ export default {
     viewMode: "docs",
     layout: "fullscreen",
   },
-} as ComponentMeta<typeof Iframe>
+} as Meta<typeof Iframe>
 
-const Template: ComponentStory<typeof Iframe> = args => (
+const Template: StoryFn<typeof Iframe> = args => (
   <div style={{ height: "100vh", width: "100%" }}>
     <Iframe {...args} />
   </div>

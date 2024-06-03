@@ -25,9 +25,8 @@
     "editor.formatOnSave": true
   },
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
-  "eslint.packageManager": "yarn",
   "cSpell.words": ["bounceapp", "commitlint", "typecheck"]
 }
