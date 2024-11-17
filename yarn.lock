@@ -12503,10 +12503,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-builder-bob@0.32.0:
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.32.0.tgz#762415c98abd6a45c2019547a97131d178f622c7"
-  integrity sha512-Lz+y+8FOR4T61eqBGgLgB26ik242qZvz0scKBdmY5QeY9HPjFdn7ATrxhEcv7Np3EA7VGWATZ/6ZBfctQ9PELg==
+react-native-builder-bob@0.32.1:
+  version "0.32.1"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.32.1.tgz#531176b7b58c2f1919e7e6d720fda6b3cc650670"
+  integrity sha512-F4LsDRXoFtX3O3CzhFV/SXMWFrOdW/nw/QPjCPrMevEXBkKHxQ9w18LmvbZZlvSHy+pdPZP9tmKz8nPoX1LOUA==
   dependencies:
     "@babel/core" "^7.25.2"
     "@babel/plugin-transform-strict-mode" "^7.24.7"
