@@ -288,7 +288,7 @@
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.13.16", "@babel/parser@^7.14.7", "@babel/parser@^7.20.0", "@babel/parser@^7.20.7", "@babel/parser@^7.23.0", "@babel/parser@^7.25.0", "@babel/parser@^7.25.9", "@babel/parser@^7.26.3":
+"@babel/parser@^7.1.0", "@babel/parser@^7.13.16", "@babel/parser@^7.14.7", "@babel/parser@^7.20.0", "@babel/parser@^7.20.7", "@babel/parser@^7.23.0", "@babel/parser@^7.25.0", "@babel/parser@^7.25.3", "@babel/parser@^7.25.9", "@babel/parser@^7.26.3":
   version "7.26.3"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.26.3.tgz#8c51c5db6ddf08134af1ddbacf16aaab48bac234"
   integrity sha512-WJ/CvmY8Mea8iDXo6a7RK2wbmJITT5fN3BEkRuFlxVyNx8jOKIIhmC4fSkTcPcf8JyavbBwIe6OpiCOBXt/IcA==
@@ -2971,6 +2971,13 @@
   dependencies:
     "@react-native/codegen" "0.74.83"
 
+"@react-native/babel-plugin-codegen@^0.76.3":
+  version "0.76.3"
+  resolved "https://registry.yarnpkg.com/@react-native/babel-plugin-codegen/-/babel-plugin-codegen-0.76.3.tgz#331f1afb4fe744b135979f0d0db62b1cd07cb5bf"
+  integrity sha512-mZ7jmIIg4bUnxCqY3yTOkoHvvzsDyrZgfnIKiTGm5QACrsIGa5eT3pMFpMm2OpxGXRDrTMsYdPXE2rCyDX52VQ==
+  dependencies:
+    "@react-native/codegen" "0.76.3"
+
 "@react-native/babel-preset@0.74.83", "@react-native/babel-preset@~0.74.83":
   version "0.74.83"
   resolved "https://registry.yarnpkg.com/@react-native/babel-preset/-/babel-preset-0.74.83.tgz#9828457779b4ce0219078652327ce3203115cdf9"
@@ -3032,6 +3039,20 @@
     jscodeshift "^0.14.0"
     mkdirp "^0.5.1"
     nullthrows "^1.1.1"
+
+"@react-native/codegen@0.76.3":
+  version "0.76.3"
+  resolved "https://registry.yarnpkg.com/@react-native/codegen/-/codegen-0.76.3.tgz#a94664601bb60797dd1042972bffdd1b2bfe008c"
+  integrity sha512-oJCH/jbYeGmFJql8/y76gqWCCd74pyug41yzYAjREso1Z7xL88JhDyKMvxEnfhSdMOZYVl479N80xFiXPy3ZYA==
+  dependencies:
+    "@babel/parser" "^7.25.3"
+    glob "^7.1.1"
+    hermes-parser "0.23.1"
+    invariant "^2.2.4"
+    jscodeshift "^0.14.0"
+    mkdirp "^0.5.1"
+    nullthrows "^1.1.1"
+    yargs "^17.6.2"
 
 "@react-native/community-cli-plugin@0.74.83":
   version "0.74.83"
@@ -8689,6 +8710,11 @@ hermes-estree@0.20.1:
   resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.20.1.tgz#0b9a544cf883a779a8e1444b915fa365bef7f72d"
   integrity sha512-SQpZK4BzR48kuOg0v4pb3EAGNclzIlqMj3Opu/mu7bbAoFw6oig6cEt/RAi0zTFW/iW6Iz9X9ggGuZTAZ/yZHg==
 
+hermes-estree@0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.23.1.tgz#d0bac369a030188120ee7024926aabe5a9f84fdb"
+  integrity sha512-eT5MU3f5aVhTqsfIReZ6n41X5sYn4IdQL0nvz6yO+MMlPxw49aSARHLg/MSehQftyjnrE8X6bYregzSumqc6cg==
+
 hermes-parser@0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.19.1.tgz#1044348097165b7c93dc198a80b04ed5130d6b1a"
@@ -8702,6 +8728,13 @@ hermes-parser@0.20.1:
   integrity sha512-BL5P83cwCogI8D7rrDCgsFY0tdYUtmFP9XaXtl2IQjC+2Xo+4okjfXintlTxcIwl4qeGddEl28Z11kbVIw0aNA==
   dependencies:
     hermes-estree "0.20.1"
+
+hermes-parser@0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.23.1.tgz#e5de648e664f3b3d84d01b48fc7ab164f4b68205"
+  integrity sha512-oxl5h2DkFW83hT4DAUJorpah8ou4yvmweUzLJmmr6YV2cezduCdlil1AvU/a/xSsAFo4WUcNA4GoV5Bvq6JffA==
+  dependencies:
+    hermes-estree "0.23.1"
 
 hermes-profile-transformer@^0.0.6:
   version "0.0.6"
@@ -12503,10 +12536,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-builder-bob@0.34.0:
-  version "0.34.0"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.34.0.tgz#4a7a7b3744ef101fa7a3087bc25405662223cc12"
-  integrity sha512-EW6ufzqBBkOkIxYyeWC/bFvyTvAFDupS8JLgmDileS8FfXgWvD/h7yaz5hhfCEogxI2nMOulCxaUs58E45dW3Q==
+react-native-builder-bob@0.35.0:
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.35.0.tgz#3e98fa6d3f8bd19899c1dabd977d7acfe2fcdbee"
+  integrity sha512-GstPAhSkeZIr9tBOvCYPgSKcNB2a5uXmXEWHnOugF9pxOusjZ4gWaPogZEqRq5Zt7+s4lSDrDVZtpUA6TZIOWA==
   dependencies:
     "@babel/core" "^7.25.2"
     "@babel/plugin-transform-strict-mode" "^7.24.7"
@@ -12514,6 +12547,7 @@ react-native-builder-bob@0.34.0:
     "@babel/preset-flow" "^7.24.7"
     "@babel/preset-react" "^7.24.7"
     "@babel/preset-typescript" "^7.24.7"
+    "@react-native/babel-plugin-codegen" "^0.76.3"
     babel-plugin-module-resolver "^5.0.2"
     browserslist "^4.20.4"
     cosmiconfig "^9.0.0"
