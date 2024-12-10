@@ -4,7 +4,7 @@ import React from "react"
 const App = () => {
   return (
     <Iframe
-      uri="https://usebounce.com/careers"
+      uri="https://bounce.com/careers"
       style={{
         flex: 1,
       }}
