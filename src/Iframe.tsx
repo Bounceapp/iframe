@@ -9,7 +9,7 @@ import { IframeProps } from "./types"
  * import { Iframe } from "@bounceapp/iframe"
  *
  * const App = () => (
- *   <Iframe uri="https://usebounce.com/careers" style={{ flex: 1 }} />
+ *   <Iframe uri="https://bounce.com/careers" style={{ flex: 1 }} />
  * )
  *
  * export default App
