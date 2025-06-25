@@ -28,5 +28,6 @@
     "source.organizeImports": "explicit",
     "source.fixAll.eslint": "explicit"
   },
-  "cSpell.words": ["bounceapp", "commitlint", "typecheck"]
+  "cSpell.words": ["bounceapp", "commitlint", "typecheck"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
