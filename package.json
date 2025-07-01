@@ -79,10 +79,10 @@
     "@commitlint/cli": "17.8.1",
     "@commitlint/config-conventional": "17.8.1",
     "@release-it/conventional-changelog": "5.1.1",
-    "@storybook/addon-docs": "9.0.14",
+    "@storybook/addon-docs": "9.0.15",
     "@storybook/addon-links": "9.0.15",
     "@storybook/addon-webpack5-compiler-babel": "^3.0.6",
-    "@storybook/react-webpack5": "9.0.14",
+    "@storybook/react-webpack5": "9.0.15",
     "@types/jest": "28.1.8",
     "@types/prettier": "2.7.3",
     "@types/react": "~19.0.10",
@@ -112,7 +112,7 @@
     "react-native-web": "^0.20.0",
     "react-native-webview": "13.13.5",
     "release-it": "15.11.0",
-    "storybook": "9.0.14",
+    "storybook": "9.0.15",
     "typescript": "~5.8.0"
   },
   "peerDependencies": {
