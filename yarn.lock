@@ -2440,10 +2440,10 @@
     react-dom "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@9.0.15":
-  version "9.0.15"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-9.0.15.tgz#414e959c71b42cf98cde85a5d0d5780b1ad2f0f7"
-  integrity sha512-DedEsoPOiRUupN9yuFaw9vwZe1QqK4QfC0Z9/0TxRNFdKffaakNJnPjnlrQn+R0eojYCRm9U9kdzOthM7/BgvQ==
+"@storybook/addon-links@9.0.16":
+  version "9.0.16"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-9.0.16.tgz#57f75312d247e649736872f2dc09e9e9cc1eed73"
+  integrity sha512-8jiFKeW7gTGZ/WhBnB38dTVFDapyiyLMCvktIcrsVrJTBbj/bC1+ts7OoeuJCs7/EN+2zn9vf+V17ZqI0I2sIA==
   dependencies:
     "@storybook/global" "^5.0.0"
 
