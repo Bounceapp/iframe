@@ -108,7 +108,7 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.4",
-    "react-native-builder-bob": "0.40.12",
+    "react-native-builder-bob": "0.40.13",
     "react-native-web": "^0.20.0",
     "react-native-webview": "13.13.5",
     "release-it": "15.11.0",
