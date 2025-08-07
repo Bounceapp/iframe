@@ -113,7 +113,7 @@
     "react-native-webview": "13.13.5",
     "release-it": "15.11.0",
     "storybook": "9.0.18",
-    "typescript": "~5.8.0"
+    "typescript": "~5.9.0"
   },
   "peerDependencies": {
     "expo": "*",
