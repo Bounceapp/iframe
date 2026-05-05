@@ -91,7 +91,7 @@
     "@typescript-eslint/parser": "8.59.2",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.8",
-    "eslint-config-universe": "15.0.3",
+    "eslint-config-universe": "15.0.4",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jest": "27.9.0",
     "eslint-plugin-n": "14.0.0",
