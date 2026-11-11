@@ -66,8 +66,9 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "17.8.1",
-    "@commitlint/config-conventional": "17.8.1",
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
+    "@commitlint/types": "21.2.3",
     "@react-native/jest-preset": "0.88.1",
     "@release-it/conventional-changelog": "5.1.1",
     "@storybook/addon-docs": "10.6.7",
@@ -78,6 +79,7 @@
     "@testing-library/react": "16.3.3",
     "@testing-library/react-native": "14.1.0",
     "@types/jest": "30.0.0",
+    "@types/node": "22.20.5",
     "@types/react": "~19.3.0",
     "@types/react-dom": "~19.3.0",
     "expo": "58.0.23",

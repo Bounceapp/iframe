@@ -30,6 +30,7 @@
         "react",
         "react-dom",
         "react-native",
+        "@react-native/jest-preset",
         "react-native-web",
         "react-native-webview",
         "@types/react",
@@ -46,7 +47,8 @@
         "oxlint-tsgolint",
         "oxfmt",
         "@commitlint/cli",
-        "@commitlint/config-conventional"
+        "@commitlint/config-conventional",
+        "@commitlint/types"
       ],
       "automerge": true
     },
