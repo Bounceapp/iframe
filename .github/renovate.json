@@ -171,6 +171,7 @@
         "storybook",
         "@storybook/addon-docs",
         "@storybook/addon-links",
+        "@storybook/addon-mcp",
         "@storybook/react-native-web-vite",
         "vite"
       ],

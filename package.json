@@ -72,6 +72,7 @@
     "@release-it/conventional-changelog": "5.1.1",
     "@storybook/addon-docs": "10.6.7",
     "@storybook/addon-links": "10.6.7",
+    "@storybook/addon-mcp": "10.6.7",
     "@storybook/react-native-web-vite": "10.6.7",
     "@testing-library/dom": "10.4.2",
     "@testing-library/react": "16.3.3",
