@@ -157,23 +157,11 @@
       "groupName": "linting",
       "matchPackageNames": [
         "lint-staged",
-        "prettier",
+        "oxlint",
+        "oxlint-tsgolint",
+        "oxfmt",
         "@commitlint/cli",
-        "@commitlint/config-conventional",
-        "@typescript-eslint/eslint-plugin",
-        "@typescript-eslint/parser",
-        "eslint",
-        "eslint-config-prettier",
-        "eslint-config-universe",
-        "eslint-plugin-import",
-        "eslint-plugin-jest",
-        "eslint-plugin-node",
-        "eslint-plugin-prettier",
-        "eslint-plugin-react",
-        "eslint-plugin-react-hooks",
-        "eslint-plugin-react-native",
-        "eslint-plugin-unused-imports",
-        "eslint-plugin-jsx-expressions"
+        "@commitlint/config-conventional"
       ],
       "automerge": true
     },

@@ -50,7 +50,7 @@ To run the example app on Web:
 pnpm example web
 ```
 
-Make sure your code passes TypeScript and ESLint. Run the following to verify:
+Make sure your code passes TypeScript, Oxlint and Oxfmt. Run the following to verify:
 
 ```sh
 pnpm typecheck
@@ -84,9 +84,7 @@ Our pre-commit hooks verify that your commit message matches this format when co
 
 ### Linting and tests
 
-[ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [TypeScript](https://www.typescriptlang.org/)
-
-We use [TypeScript](https://www.typescriptlang.org/) for type checking, [ESLint](https://eslint.org/) with [Prettier](https://prettier.io/) for linting and formatting the code, and [Jest](https://jestjs.io/) for testing.
+We use [TypeScript](https://www.typescriptlang.org/) for type checking, [Oxlint](https://oxc.rs/docs/guide/usage/linter) for linting, [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) for formatting the code, and [Jest](https://jestjs.io/) for testing.
 
 Our pre-commit hooks verify that the linter and tests pass when committing.
 
@@ -105,7 +103,7 @@ pnpm release
 The `package.json` file contains various scripts for common tasks:
 
 - `pnpm typecheck`: type-check files with TypeScript.
-- `pnpm lint`: lint files with ESLint.
+- `pnpm lint`: lint with Oxlint and check formatting with Oxfmt.
 - `pnpm test`: run unit tests with Jest.
 
 ### Sending a pull request

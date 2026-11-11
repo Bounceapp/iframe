@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 80,
+  "semi": false,
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "trailingComma": "all",
+  "sortImports": {
+    "customGroups": [
+      { "groupName": "assets", "elementNamePattern": ["**/*.{jpg,png,svg}"] }
+    ],
+    "groups": [
+      "builtin",
+      "external",
+      ["parent", "sibling", "index"],
+      "unknown",
+      "assets"
+    ],
+    "newlinesBetween": true,
+    "order": "asc",
+    "ignoreCase": true
+  },
+  "sortPackageJson": false,
+  "ignorePatterns": ["lib", "docs", "pnpm-lock.yaml"]
+}

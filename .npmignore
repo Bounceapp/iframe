@@ -5,7 +5,6 @@ example/
 **/__tests__
 **/__fixtures__
 **/__mocks__
-.eslintcache
 
 CONTRIBUTING.md
 babel.config.js
