@@ -4,57 +4,69 @@ We want this community to be friendly and respectful to each other. Please follo
 
 ## Development workflow
 
-To get started with the project, run `yarn` in the root directory to install the required dependencies for each package:
+The Node.js version is pinned in `.tool-versions` and managed with [mise](https://mise.jdx.dev/). Install it with:
 
 ```sh
-yarn
+mise install
 ```
 
-> While it's possible to use [`npm`](https://github.com/npm/cli), the tooling is built around [`yarn`](https://classic.yarnpkg.com/), so you'll have an easier time if you use `yarn` for development.
+We use [`pnpm`](https://pnpm.io/) as the package manager. Its version is pinned in the `packageManager` field of `package.json`; the easiest way to get it is through [Corepack](https://pnpm.io/installation#using-corepack), which ships with Node.js:
+
+```sh
+corepack enable
+```
+
+Then install the dependencies from the root directory:
+
+```sh
+pnpm install
+```
+
+> The lockfile and tooling are built around `pnpm`, so please don't install dependencies with `npm` or Yarn.
 
 While developing, you can run the [example app](/example/) to test your changes. Any changes you make in your library's JavaScript code will be reflected in the example app without a rebuild. If you change any native code, then you'll need to rebuild the example app.
 
 To start the packager:
 
 ```sh
-yarn example start
+pnpm example start
 ```
 
 To run the example app on Android:
 
 ```sh
-yarn example android
+pnpm example android
 ```
 
 To run the example app on iOS:
 
 ```sh
-yarn example ios
+pnpm example ios
 ```
 
 To run the example app on Web:
 
 ```sh
-yarn example web
+pnpm example web
 ```
 
 Make sure your code passes TypeScript and ESLint. Run the following to verify:
 
 ```sh
-yarn typecheck
-yarn lint
+pnpm typecheck
+pnpm lint
 ```
 
 To fix formatting errors, run the following:
 
 ```sh
-yarn lint --fix
+pnpm lint:fix
 ```
 
 Remember to add tests for your change if possible. Run the unit tests by:
 
 ```sh
-yarn test
+pnpm test
 ```
 
 ### Commit message convention
@@ -85,16 +97,16 @@ We use [release-it](https://github.com/release-it/release-it) to make it easier 
 To publish new versions, run the following:
 
 ```sh
-yarn release
+pnpm release
 ```
 
 ### Scripts
 
 The `package.json` file contains various scripts for common tasks:
 
-- `yarn typescript`: type-check files with TypeScript.
-- `yarn lint`: lint files with ESLint.
-- `yarn test`: run unit tests with Jest.
+- `pnpm typecheck`: type-check files with TypeScript.
+- `pnpm lint`: lint files with ESLint.
+- `pnpm test`: run unit tests with Jest.
 
 ### Sending a pull request
 
