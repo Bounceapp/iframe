@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig",
   "include": ["src"],
-  "exclude": ["src/**/*.stories.*"],
+  "exclude": ["src/**/*.test.*", "src/**/*.stories.*"],
   "compilerOptions": {
     "noEmit": false,
     "rootDir": "src"

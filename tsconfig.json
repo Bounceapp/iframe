@@ -1,5 +1,8 @@
 {
   "extends": "expo/tsconfig.base",
+  "include": ["**/*", ".storybook/**/*"],
+  // Build output, and the native projects `expo prebuild` generates.
+  "exclude": ["lib", "docs", "example/ios", "example/android"],
   "compilerOptions": {
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
@@ -11,6 +14,7 @@
     "strict": true,
     "paths": {
       "@bounceapp/iframe": ["./src/index"]
-    }
+    },
+    "types": ["jest"]
   }
 }
