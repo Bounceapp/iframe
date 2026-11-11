@@ -25,9 +25,8 @@ npx expo install @bounceapp/iframe react-native-webview
 ## Usage
 
 ```tsx
-import React from "react"
-
 import { Iframe } from "@bounceapp/iframe"
+import React from "react"
 
 const App = () => (
   <Iframe uri="https://bounce.com/careers" style={{ flex: 1 }} />

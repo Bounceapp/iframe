@@ -1,12 +1,19 @@
 {
   "expo": {
-    "name": "iframe-example",
-    "slug": "iframe-example",
+    "name": "Iframe Example",
+    "slug": "bounceapp-iframe-example",
     "version": "1.0.0",
     "orientation": "portrait",
+    "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bounceapp.iframe.example"
     },
-    "platforms": ["android", "ios", "web"]
+    "android": {
+      "package": "com.bounceapp.iframe.example"
+    },
+    "web": {
+      "bundler": "metro"
+    }
   }
 }
