@@ -1,12 +1,8 @@
 module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-webpack5-compiler-babel",
-    "@storybook/addon-docs",
-  ],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: ["@storybook/addon-links", "@storybook/addon-docs"],
   framework: {
-    name: "@storybook/react-webpack5",
+    name: "@storybook/react-native-web-vite",
     options: {},
   },
   docs: {},

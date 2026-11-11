@@ -168,14 +168,11 @@
     {
       "groupName": "storybook",
       "matchPackageNames": [
-        "@storybook/addon-actions",
-        "@storybook/addon-essentials",
-        "@storybook/addon-interactions",
+        "storybook",
+        "@storybook/addon-docs",
         "@storybook/addon-links",
-        "@storybook/builder-webpack4",
-        "@storybook/manager-webpack4",
-        "@storybook/react",
-        "@storybook/testing-library"
+        "@storybook/react-native-web-vite",
+        "vite"
       ],
       "automerge": true
     },
