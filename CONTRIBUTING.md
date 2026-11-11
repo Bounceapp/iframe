@@ -86,7 +86,7 @@ Our pre-commit hooks verify that your commit message matches this format when co
 
 We use [TypeScript](https://www.typescriptlang.org/) for type checking, [Oxlint](https://oxc.rs/docs/guide/usage/linter) for linting, [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) for formatting the code, and [Jest](https://jestjs.io/) for testing.
 
-Our pre-commit hooks verify that the linter and tests pass when committing.
+Our pre-commit hooks verify that the linter and tests pass when committing. The hooks are managed by [Lefthook](https://lefthook.dev/) and configured in `lefthook.yml`; they are installed automatically when you install dependencies.
 
 ### Publishing to npm
 

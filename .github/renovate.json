@@ -156,7 +156,7 @@
     {
       "groupName": "linting",
       "matchPackageNames": [
-        "lint-staged",
+        "lefthook",
         "oxlint",
         "oxlint-tsgolint",
         "oxfmt",

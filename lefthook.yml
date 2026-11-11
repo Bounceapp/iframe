@@ -1,0 +1,33 @@
+# Git hooks, managed by Lefthook (https://lefthook.dev).
+# Installed by the `prepare` script; run one by hand with `lefthook run pre-commit`.
+#
+# Tools are called straight from node_modules/.bin so no package manager has to
+# boot in the commit path.
+
+pre-commit:
+  jobs:
+    - name: oxlint
+      glob: "*.{ts,tsx,js,jsx,mjs,cjs}"
+      run: node_modules/.bin/oxlint --fix --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true
+
+    # No glob: oxfmt skips the file types it doesn't format.
+    - name: oxfmt
+      run: node_modules/.bin/oxfmt --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true
+
+    # Runs after oxlint and oxfmt so it sees the files they may have rewritten.
+    - name: verify
+      group:
+        parallel: true
+        jobs:
+          - name: typecheck
+            run: node_modules/.bin/tsc
+
+          - name: test
+            run: node_modules/.bin/jest --passWithNoTests
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: node_modules/.bin/commitlint --edit {1}

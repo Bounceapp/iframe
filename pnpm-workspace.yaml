@@ -1,2 +1,4 @@
 allowBuilds:
   esbuild: true
+  # Its postinstall only runs `lefthook install`, which `prepare` already does.
+  lefthook: false
