@@ -24,7 +24,13 @@ pnpm install
 
 > The lockfile and tooling are built around `pnpm`, so please don't install dependencies with `npm` or Yarn.
 
-While developing, you can run the [example app](/example/) to test your changes. Any changes you make in your library's JavaScript code will be reflected in the example app without a rebuild. If you change any native code, then you'll need to rebuild the example app.
+While developing, you can run Storybook to preview your changes on web:
+
+```sh
+pnpm dev:docs
+```
+
+To try your changes in a real app on iOS, Android or web, run the Expo [example app](/example/). It imports the library straight from `src/`, so edits reload without a build. Native platforms run in [Expo Go](https://expo.dev/go), which ships with `react-native-webview`.
 
 To start the packager:
 

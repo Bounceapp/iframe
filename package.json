@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/Bounceapp/iframe#readme",
   "scripts": {
+    "example": "pnpm --filter @bounceapp/iframe-example",
     "test": "jest --passWithNoTests",
     "typecheck": "tsc",
     "lint": "oxlint && oxfmt --check",
@@ -43,9 +44,7 @@
     "prepare": "bob build && lefthook install --reset-hooks-path",
     "release": "release-it",
     "build:docs": "storybook build --output-dir docs",
-    "dev:docs": "storybook dev -p 6006",
-    "example": "pnpm --dir example",
-    "bootstrap": "pnpm example install && pnpm install"
+    "dev:docs": "storybook dev -p 6006"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
