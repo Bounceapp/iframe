@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from "@storybook/react-webpack5"
-import React from "react"
 
 import { Iframe } from "./Iframe"
 

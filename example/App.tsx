@@ -1,5 +1,4 @@
 import { Iframe } from "@bounceapp/iframe"
-import React from "react"
 
 const App = () => {
   return (
