@@ -1,0 +1,68 @@
+{
+  "v": 0,
+  "components": {
+    "iframe": {
+      "id": "iframe",
+      "name": "Iframe",
+      "path": "./src/Iframe.stories.tsx",
+      "jsDocTags": {
+        "category": [
+          "Component"
+        ]
+      },
+      "description": "```tsx\nimport React from \"react\"\n\nimport { Iframe } from \"@bounceapp/iframe\"\n\nconst App = () => (\n  <Iframe uri=\"https://bounce.com/careers\" style={{ flex: 1 }} />\n)\n\nexport default App\n```",
+      "reactDocgen": {
+        "description": "```tsx\nimport React from \"react\"\n\nimport { Iframe } from \"@bounceapp/iframe\"\n\nconst App = () => (\n  <Iframe uri=\"https://bounce.com/careers\" style={{ flex: 1 }} />\n)\n\nexport default App\n```\n\n@category Component",
+        "methods": [],
+        "displayName": "Iframe",
+        "definedInFile": "/home/runner/work/iframe/iframe/src/Iframe.tsx",
+        "actualName": "Iframe",
+        "exportName": "Iframe",
+        "props": {
+          "onLoadEnd": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "uri": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "style": {
+            "required": false,
+            "tsType": {
+              "name": "WebViewProps[\"style\"]",
+              "raw": "WebViewProps[\"style\"]"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "iframe--default",
+          "name": "Iframe",
+          "snippet": "const Default = () => <Iframe\n    uri=\"https://bounce.com/careers\"\n    style={{ width: \"100%\", height: \"100%\" }} />;"
+        }
+      ],
+      "import": "import { Iframe } from '@bounceapp/iframe';"
+    }
+  },
+  "meta": {
+    "docgen": "react-docgen",
+    "durationMs": 89
+  }
+}
