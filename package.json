@@ -66,9 +66,9 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "21.2.4",
-    "@commitlint/config-conventional": "21.2.4",
-    "@commitlint/types": "21.2.3",
+    "@commitlint/cli": "21.3.0",
+    "@commitlint/config-conventional": "21.3.0",
+    "@commitlint/types": "21.3.0",
     "@react-native/jest-preset": "0.88.1",
     "@release-it/conventional-changelog": "5.1.1",
     "@storybook/addon-docs": "10.6.9",
